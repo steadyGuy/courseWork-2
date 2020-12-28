@@ -1,0 +1,20 @@
+.tab-sidebar {
+  padding: 28px 12px;
+  border: solid 1px #D3D3D3;
+}
+.tab-sidebar__title {
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
+}
+.tab-sidebar__block {
+  margin-top: 24px;
+  text-align: center;
+}
+.tab-sidebar input {
+  border-radius: 12px;
+  width: 244px;
+  height: 34px;
+  font-size: 12px;
+  padding-left: 12px;
+}

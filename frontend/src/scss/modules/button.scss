@@ -1,0 +1,26 @@
+.button {
+  color: #fff;
+  background-color: $accentColor;
+  width: 224px;
+  height: 42px;
+  font-size: 15px;
+  border-radius: 17px 0 17px 0;
+  position: relative;
+  display: block;
+  cursor: pointer;
+  transition: 0.3s;
+  position: relative;
+  font-family: 'Open Sans';
+  font-weight: 300;
+  &:hover {
+    background-color: darken($accentColor, 12%);
+  }
+  &:active {
+    top: 1px;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+  }
+}

@@ -1,0 +1,49 @@
+include ../includes/head
+div(class="container")
+    div(class="wrap")
+        h1 Панель управления базой данных компании
+        div(class="tabs")
+            input(type="radio" name="tab-btn" id="tab-btn-1" data-content-index="1" value="" checked)
+            label(for="tab-btn-1") Планы на изготовления продукции
+            input(type="radio" name="tab-btn" id="tab-btn-2" data-content-index="2" value="")
+            label(for="tab-btn-2") Изготовленная продукция
+            input(type="radio" name="tab-btn" id="tab-btn-3" data-content-index="3" value="")
+            label(for="tab-btn-3") Бракованая продукция
+            input(type="radio" name="tab-btn" id="tab-btn-4" data-content-index="4" value="")
+            label(for="tab-btn-4") Работники
+            input(type="radio" name="tab-btn" id="tab-btn-5" data-content-index="5" value="")
+            label(for="tab-btn-5") Справочник продуктов
+            input(type="radio" name="tab-btn" id="tab-btn-6" data-content-index="6" value="")
+            label(for="tab-btn-6") Фасоны
+
+            div(id="content-1" class="content")
+                include ../includes/tab-content
+            div(id="content-2" class="content")
+                include ../includes/tab-content-2
+            div(id="content-3" class="content")
+                include ../includes/tab-content-3
+            div(id="content-4" class="content")
+                include ../includes/tab-content-4
+            div(id="content-5" class="content")
+                include ../includes/tab-content-5
+            div(id="content-6" class="content")
+                include ../includes/tab-content-6
+        br
+        p Обновить элемент таблицы можно нажав на нужный айтем таблицы через <b>ПКМ</b>
+        br
+        p Также, удалить элемент таблицы можно нажав на нужный айтем таблицы через <b>Ctrl + ПКМ</b>
+        //- p ВАЖНО! При видаленні робітника в таблиці робітників, всі дані пов'язані з цим робітником в plans, doneProducts і defectiveProducts повинні бути видалені також.
+        //- br
+        //- p ВАЖНО! При видаленні продукту, фасона - таблиці plans, doneProducts, defectiveProducts не повинні мінятися. По фатку повинен бути RESTRICT, якщо дані продуктів і фасонів вже використовуються в цих таблицях.
+        //- br
+        //- p ВАЖНО! Спочатку ми додавали по імені й призвіщу, але воно ж може повторитися. Тому краще додавати по id. А якщо незнаєш id певного користувача, то просто зайди в таблицю працівників і вибери через фільтри того хто тобі треба
+        //- br
+        //- p СУПЕР ВАЖНО! Можна додати собитіє видалення при кліці по стовпцю
+        //- br
+        //- p СУПЕР ВАЖНО! Якщо брати брак в певний проміжок часу, то можна тільки один рядок вивести з результатами всіх через агрегтані функції і GOUP BY
+        //- br
+        //- p СУПЕР МЕГА ПУПЕР ВАЖНО! В виготовленій продукції буде додаватися брак, якщо є
+        //- br
+        //- p СВЯЗЬ ПЛАНА Й ВИГОТОВЛЕНОЪ ПРОДУКЦІЇ 1 К 1
+    include ../includes/footer
+include ../includes/popupForm

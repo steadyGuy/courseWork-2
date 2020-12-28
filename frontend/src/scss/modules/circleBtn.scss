@@ -1,0 +1,27 @@
+.circle-btn {
+  background-color: lighten($accentColor, 8%);
+  border-radius: 100%;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+  position: relative;
+
+  svg {
+    fill: #fff;
+    display: block;
+    width: 18px;
+    height: 18px;
+  }
+
+  &:hover {
+    background-color: darken($accentColor, 8%);
+  }
+
+  &:active {
+    top: 1px;
+  }
+}

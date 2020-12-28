@@ -1,0 +1,18 @@
+.dropdown {
+  background-color: #fff;
+  border-radius: 12px;
+  min-height: 34px;
+  min-width: 196px;
+  cursor: pointer;
+  border: solid 1px $borderColor;
+  padding: 8px 12px;
+  transition: 0.2s ease-in-out;
+  font-family: 'Open Sans';
+  option {
+    cursor: pointer;
+  }
+
+  &:hover {
+    background-color: darken(#fff, 3%);
+  }
+}

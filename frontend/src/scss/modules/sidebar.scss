@@ -1,0 +1,63 @@
+.tab-sidebar {
+  padding: 28px 12px;
+  border: solid 1px #d3d3d3;
+  border-bottom: none;
+  border-top: none;
+  &__title {
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  &__b {
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-top: 6px;
+  }
+
+  label {
+    font-size: 15px;
+    display: block;
+  }
+
+  &__block {
+    margin-top: 22px;
+    input[type="range"] {
+      padding-left: 0;
+      cursor: pointer;
+    }
+    p {
+      display: inline-block;
+      font-size: 13px;
+      margin-left: 12px;
+      input[type="checkbox"] {
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        margin-left: 6px;
+        position: relative;
+        cursor: pointer;
+        top: 3px;
+      }
+    }
+  }
+
+  &__btn {
+    text-align: center;
+    margin: 24px auto;
+  }
+
+  input, select {
+    display: block;
+    margin: 6px auto;
+    border: solid 1px $borderColor;
+    border-radius: 12px;
+    width: 244px;
+    height: 34px;
+    font-size: 12px;
+    padding-left: 12px;
+    color: #999999;
+  }
+}

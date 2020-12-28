@@ -1,0 +1,34 @@
+div(class="main-content")
+  div(class="tab-content")
+    div(class="tab-content__top")
+      div(class="tab-content__sort-list")
+        form(action="" method="post")
+          select(name="done-products" class="dropdown")
+            option(value="count") сортировать по количеству
+            option(value="fashion") сортировать по фасону
+            option(value="product") сортировать по продукту
+            option(value="date") сортировать по дате
+            option(value="employee") сортировать по работнику
+      div(class="tab-content__add-btn circle-btn tab-content__btn")
+        svg(version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewbox='0 0 512 512' style='enable-background:new 0 0 512 512;' xml:space='preserve')
+          path(d='M492,236H276V20c0-11.046-8.954-20-20-20c-11.046,0-20,8.954-20,20v216H20c-11.046,0-20,8.954-20,20s8.954,20,20,20h216\
+          v216c0,11.046,8.954,20,20,20s20-8.954,20-20V276h216c11.046,0,20-8.954,20-20C512,244.954,503.046,236,492,236z')
+      div(class="tab-content__trash-btn circle-btn tab-content__btn" style="display: none;")
+    div(class="table")
+      table
+  div(class="tab-sidebar")
+    h2(class="tab-sidebar__title") Фильтр
+    form(action="" method="post")
+      div(class="tab-sidebar__block")
+        label(for="find-by-user-done") Выполнен работником:
+        input(type="text" name="employee" id="find-by-user-done" placeholder="Имя, Фамилия через пробел...")
+      div(class="tab-sidebar__block")
+        label(for="find-by-product-plan") Продукт:
+        input(type="text" name="products" id="find-by-product-done" placeholder="Имя продукта...")
+      div(class="tab-sidebar__block")
+        label(for="find-by-date-product-done") Дата выполнения:
+        b(class="tab-sidebar__b") От
+        input(type="date" id="find-by-date-product-done" name="dateStart")
+        b(class="tab-sidebar__b") До
+        input(type="date" name="dateEnd")
+      button(type="submit" class="button tab-sidebar__btn") Применить фильтр

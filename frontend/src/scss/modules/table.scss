@@ -1,0 +1,36 @@
+.table {
+  text-align: center;
+  margin-top: 28px;
+  table {
+    width: 100%;
+    text-align: center;
+    border: solid 1px $borderColor;
+  }
+
+  tr {
+    text-align: center;
+    border: solid 1px $borderColor;
+    cursor: pointer;
+    transition: 0.3s;
+    &:hover {
+      background-color: darken(#fff, 5%);
+    }
+  }
+
+  td,
+  th {
+    border: solid 1px $borderColor;
+    text-align: center;
+  }
+
+  th {
+    background-color: $accentColor;
+    color: #fff;
+    font-weight: lighter;
+    padding: 6px;
+  }
+
+  td {
+    padding: 4px;
+  }
+}

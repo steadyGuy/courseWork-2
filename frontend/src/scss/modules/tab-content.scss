@@ -1,0 +1,36 @@
+.tab-content {
+  &__top {
+    display: flex;
+  }
+
+  &__btn {
+    margin-left: 14px;
+  }
+
+  &__add-btn {
+    margin-left: 24px;
+  }
+
+  &__remove-bad-type {
+    background-color: #EC5757;
+    &:hover {
+      background-color: lighten(#EC5757, 12%);
+    }
+  }
+
+  &__trash-btn {
+    background-color: $dangerColor;
+
+    &:hover {
+      background-color: darken(#EC5757, 10%);
+    }
+  }
+
+  &__update-btn {
+    background-color: #B8B8B8;
+
+    &:hover {
+      background-color: darken(#B8B8B8, 10%);
+    }
+  }
+}
